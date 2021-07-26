@@ -4,17 +4,21 @@
 <head>
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
-      <link rel ="stylesheet" href="style.css" />
+      <link rel ="stylesheet" href="./css/style.css" />
       <title>ohmyfood</title>
       <script src="https://kit.fontawesome.com/d80c6b1931.js" crossorigin="anonymous"></script> 
 </head>
 
 <body>
     <div class="loadingspinner">
+        <div class="spinner__border">
+            <div class="spinner__center">
+            </div>
+        </div>
 
     </div>
     <header class="header">
-        <img class="header__logo"  src="images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
+        <a href="index.html"><h1 class="header__logo">ohmyfood</h1></a>
     </header>
 
     <main>
@@ -41,37 +45,37 @@
                 </div>
             </div>
         </section>
-        <section class="operating__container">
-           <div class="operating">
-               <h2 class="operating__title">
+        <section class="functioning__container">
+           <div class="functioning">
+               <h2 class="functioning__title">
                    Fonctionnement
                </h2>
-               <div class="operating__choices">
-                   <div class="operating__choice">
-                        <div class="operating__number">1    
+               <div class="functioning__choices">
+                   <div class="functioning__choice">
+                        <div class="functioning__number">1    
                         </div>
-                        <div class="operating__icon">
+                        <div class="functioning__icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <p class="operating__text">Choisissez un restaurant 
+                        <p class="functioning__text">Choisissez un restaurant 
                         </p>
                     </div>
-                    <div class="operating__choice">
-                        <div class="operating__number">2    
+                    <div class="functioning__choice">
+                        <div class="functioning__number">2    
                         </div>
-                        <div class="operating__icon">
+                        <div class="functioning__icon">
                             <i class="fas fa-list-ul"></i>
                         </div>
-                        <p class="operating__text">Composez votre menu 
+                        <p class="functioning__text">Composez votre menu 
                         </p>
                     </div>
-                    <div class="operating__choice">
-                        <div class="operating__number">3   
+                    <div class="functioning__choice">
+                        <div class="functioning__number">3   
                         </div>
-                        <div class="operating__icon">
+                        <div class="functioning__icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <p class="operating__text">dégustez au restaurant
+                        <p class="functioning__text">dégustez au restaurant
                         </p>
                     </div>
                 </div>
@@ -82,7 +86,7 @@
             <div class="restaurant__cards">
                 <a href="la-palette-du-gout.html">
                     <div class="restaurant__card">
-                        <div class="restaurant__card_image">
+                        <div class="restaurant__card-image">
                             <div class="restaurant__card-new">
                                 <p>Nouveau</p>
                             </div>
@@ -90,27 +94,20 @@
                         </div>
                         <div class="restaurant__info">
                             <div class="restaurant__info-description">
-                                <div class="restaurant__info-name">
-                                    <h3>La palette du goût</h3>
-                                </div>
-                                <div class="restaurant__info-city">
-                                    <p>Ménilmontant</p>
-                                </div>
+                                <div class="restaurant__info-name">La palette du goût</div>
+                                <div class="restaurant__info-city">Ménilmontant</div>
                             </div>  
-                            <div class="restaurant__info-heart">
-                                <div class="heart-full">
-                                    <i class="full fas fa-heart fill-gradient-linear"></i>
-                                </div>
-                                <div class="heart-empty">
-                                    <i class="empty far fa-heart"></i>
-                                </div>
+                            <div class="like">
+                                <i class="far fa-heart like--empty" aria-hidden="true">
+                                    <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                                </i>   
                             </div>                                  
                         </div>
                     </div>
                 </a>
                 <a href="la-note-enchantee.html">
                     <div class="restaurant__card">
-                        <div class="restaurant__card_image">
+                        <div class="restaurant__card-image">
                             <div class="restaurant__card-new">
                                 <p>Nouveau</p>
                             </div>
@@ -118,27 +115,20 @@
                         </div>
                         <div class="restaurant__info">
                             <div class="restaurant__info-description">
-                                <div class="restaurant__info-name">
-                                    <h3>La note enchantée</h3>
-                                </div>
-                                <div class="restaurant__info-city">
-                                    <p>Charonne</p>
-                                </div>
+                                <div class="restaurant__info-name">La note enchantée</div>
+                                <div class="restaurant__info-city">Charonne</div>
                             </div>  
-                            <div class="restaurant__info-heart">
-                                <div class="heart-full">
-                                    <i class="full fas fa-heart fill-gradient-linear"></i>
-                                </div>
-                                <div class="heart-empty">
-                                    <i class="empty far fa-heart"></i>
-                                </div>
-                            </div>      
+                            <div class="like">
+                                <i class="far fa-heart like--empty" aria-hidden="true">
+                                    <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                                </i>    
+                            </div>     
                         </div>
                     </div>
                 </a>     
                 <a href="a-la-francaise.html">
                     <div class="restaurant__card">
-                        <div class="restaurant__card_image">
+                        <div class="restaurant__card-image">
                             <div class="restaurant__card-new">
                                 <p>Nouveau</p>
                             </div>
@@ -146,27 +136,20 @@
                         </div>
                         <div class="restaurant__info">
                             <div class="restaurant__info-description">
-                                <div class="restaurant__info-name">
-                                    <h3>À la française</h3>
-                                </div>
-                                <div class="restaurant__info-city">
-                                    <p>Cité Rouge</p>
-                                </div>
+                                <div class="restaurant__info-name">À la française</div>
+                                <div class="restaurant__info-city">Cité Rouge</div>
                             </div>  
-                            <div class="restaurant__info-heart">
-                                <div class="heart-full">
-                                    <i class="full fas fa-heart fill-gradient-linear"></i>
-                                </div>
-                                <div class="heart-empty">
-                                    <i class="empty far fa-heart"></i>
-                                </div>
-                            </div>      
+                            <div class="like">
+                                <i class="far fa-heart like--empty" aria-hidden="true">
+                                    <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                                </i>   
+                            </div>     
                         </div>
                     </div>
                 </a>           
                 <a href="le-delice-des-sens.html">
                     <div class="restaurant__card">
-                        <div class="restaurant__card_image">
+                        <div class="restaurant__card-image">
                             <div class="restaurant__card-new">
                                 <p>Nouveau</p>
                             </div>
@@ -174,21 +157,14 @@
                         </div>
                         <div class="restaurant__info">
                             <div class="restaurant__info-description">
-                                <div class="restaurant__info-name">
-                                    <h3>Le délice des sens</h3>
-                                </div>
-                                <div class="restaurant__info-city">
-                                    <p>Folie-Méricourt</p>
-                                </div>
+                                <div class="restaurant__info-name">Le délice des sens</div>
+                                <div class="restaurant__info-city">Folie-Méricourt</div>
                             </div>  
-                            <div class="restaurant__info-heart">
-                                <div class="heart-full">
-                                    <i class="full fas fa-heart fill-gradient-linear"></i>
-                                </div>
-                                <div class="heart-empty">
-                                    <i class="empty far fa-heart"></i>
-                                </div>
-                            </div>      
+                            <div class="like">
+                                <i class="far fa-heart like--empty" aria-hidden="true">
+                                    <i class="fas fa-heart like--full" aria-hidden="true"></i>
+                                </i>  
+                            </div>     
                         </div>
                     </div>
                 </a>                
@@ -201,7 +177,7 @@
     <footer class="footer">
         <div class="footer__container">
           <div class="logo-footer">
-            <img class="logo-footer"  src="images/logo/ohmyfood.png" alt="ohmyfood logo footer">
+            <a href="index.html">ohmyfood</a>
           </div>
           <div class="footer__container-links">
             <div class="footer__container-link">
