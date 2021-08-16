@@ -1,0 +1,29 @@
+.like {
+    &--full {
+      position: absolute;
+      left: 0rem;
+      background: linear-gradient(170deg, $secondary-color, $primary-color);
+      //prends la forme du coeur
+      -webkit-background-clip: text;
+      //fais apparaitre le background
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px black;
+      transition: transform 500ms ease;
+      transform: scale(0);
+      z-index: -1;
+    }
+  
+    &--empty {
+      font-size: 2.3rem;
+      position: relative;
+      transition: color 500ms ease;
+      z-index: 2;
+     
+      &:hover .like--full {
+        cursor: pointer;
+        transition: transform 500ms ease;
+        transform: scale(1);
+      
+      }
+    }
+  }

@@ -1,0 +1,157 @@
+body {
+    font-family: $text-font;
+  }
+  .container_restaurant {
+    background-color: #eaeaea;
+  }
+  
+  .restaurant_img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .container_restaurant_menu {
+    top: -2rem;
+    position: relative;
+    background-color: #eaeaea;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    &_title {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: $title-font;
+    }
+  }
+  .menu_title {
+    font-size: 1.8rem;
+  }
+  
+  .dishe_block_title {
+    margin: 1rem 0 0.6rem 1rem;
+    font-size: small;
+  }
+  /* trait pour souligner les titres*/
+  hr {
+    height: 3px;
+    width: 13%;
+    max-width: 40px;
+    min-width: 30px;
+    background-color: $third-color;
+    border: none;
+    margin-top: 0.1rem;
+    margin-left: 0.4rem;
+  }
+  
+  /* Description du plat*/
+  
+  .dishe_card {
+    @include menu-card;
+    &_content_h2 {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    &_description {
+      display: flex;
+      justify-content: space-between;
+    }
+    &_description_text {
+      font-weight: 300;
+    }
+    &_description_price {
+      font-weight: 600;
+    }
+  }
+  .btn_commander {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 2rem;
+    background-color: #eaeaea;
+  }
+  
+  .btn_commander_links {
+    @include btn;
+    margin-top: 1rem;
+  }
+  
+  /* Animation pour l'apparition de la carte  */
+  
+  .dishe_card:nth-child(2) {
+    animation: slide_card linear 1s backwards;
+  }
+  
+  .dishe_card:nth-child(3) {
+    animation: slide_card linear 1s 0.3s backwards;
+  }
+  
+  .dishe_card:nth-child(4) {
+    animation: slide_card linear 1s 0.6s backwards;
+  }
+  
+  .dishe_card:nth-child(5) {
+    animation: slide_card linear 1s 0.9s backwards;
+  }
+  
+  /* Animation au survol d'un plat = apparition de la checkbox et décalage de la description */
+  
+  .dishe_card_checkbox {
+    background-color: $third-color;
+    position: absolute;
+    top: 0;
+    padding: 0 2rem;
+    right: -150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+  }
+  
+  .dishe_card:hover .dishe_card_checkbox {
+    right: 0%;
+    transition: right 1s;
+  }
+  .dishe_card:hover .dishe_card_checkbox_icon {
+    transform: rotate(1turn);
+    transition: transform 1s;
+    color: white;
+  }
+  .dishe_card:hover .dishe_card_description_text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .dishe_card:hover .dishe_card_content {
+    padding-right: 5.5rem;
+    transition: 1s;
+    &_h2 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  
+  /* responsive tablette */
+  @media screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+    .dishe_block {
+      width: 60%;
+      margin: auto;
+    }
+    .container_restaurant_menu_title {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  
+  /* responsive desktop */
+  @media screen and (min-width: $tablet-breakpoint) {
+    .container_restaurant_menu_title {
+      width: 40%;
+    }
+    .container_restaurant_menu_dishe {
+      display: flex;
+      justify-content: space-between;
+    }
+    .dishe_block {
+      width: 35%;
+    }
+  }

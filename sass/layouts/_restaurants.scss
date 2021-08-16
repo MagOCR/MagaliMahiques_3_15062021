@@ -1,0 +1,79 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+  }
+  
+  .restaurants_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .restaurants_list {
+    margin: 0 1rem;
+  }
+  
+  .restaurants_list_link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .restaurants_list_card {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    max-width: 99%;
+    overflow: hidden;
+    box-shadow: 0 1px 10px -3px #7e7e7e;
+    position: relative;
+  }
+  
+  .restaurants_list_card_new {
+    align-items: center;
+    position: absolute;
+    height: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: $third-color;
+    color: #185747;
+    padding: 0.15rem 0.75rem;
+    & p {
+      margin: auto;
+    }
+  }
+  
+  .restaurants_list_card_img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    & img {
+      height: 12rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .restaurants_list_card_info {
+    height: 15%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .restaurants_list_card_title {
+      font-weight: 700;
+    }
+  }
+  
+  .restaurants_list_card_title {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }

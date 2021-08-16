@@ -1,0 +1,33 @@
+.header {
+    &_logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.5rem;
+      &_text {
+        font-family: $title-font;
+      }
+    }
+  }
+  /* responsive tablette*/
+  @media screen and (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+    .header_logo {
+      height: 5rem;
+      &_text {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+    }
+  }
+  /* responsive desktop*/
+  @media screen and (min-width: $tablet-breakpoint) {
+    .header_block_logo {
+      height: 5rem;
+      &_text {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+    }
+  }
