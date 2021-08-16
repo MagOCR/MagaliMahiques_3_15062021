@@ -8,11 +8,13 @@
     "sass": "sass --watch ./sass/style.scss:./css/style.css"
   },
   "repository": {
-   
+    "type": "git",
+    "url": "git+https://github.com/MagOCR/MagaliMahiques_3_15062021.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
+    "url": "https://github.com/MagOCR/MagaliMahiques_3_15062021/issues"
 }
  
 
