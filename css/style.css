@@ -34,7 +34,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 1250px;
+  max-width: 1440px;
   width: 96%;
   margin: auto;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
@@ -84,7 +84,7 @@ body {
   justify-content: baseline;
   align-items: center;
   z-index: 100;
-  animation: fondu 1s 1s both;
+  animation: fondu 2s 2s both;
 }
 
 .loader-spinner {
