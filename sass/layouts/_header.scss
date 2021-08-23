@@ -3,9 +3,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 2.5rem;
+      padding: 20px 0 20px 0;
       &_text {
         font-family: $title-font;
+        font-size: 35px;
+
       }
     }
   }

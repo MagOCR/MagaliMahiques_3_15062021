@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 2rem;
+    height: 50px;
     background-color: #eaeaea;
     box-shadow: 0em 0 0.3em #4e4c4c;
     &_logo {
@@ -11,8 +11,12 @@
     }
     &_field {
       font-weight: bold;
-      font-size: medium;
+      font-size: large;
+      border:none;
+      background-color: var(--couleur-fond-gris-form);
+      text-align: center;
     }
+  
   }
   
   .search_form_text {
@@ -27,13 +31,13 @@
       width: 80%;
       text-align: center;
       font-weight: bold;
-      font-size: larger;
+      font-size:x-large;
     }
     &_slogan {
       width: 90%;
       text-align: center;
       font-weight: 300;
-      font-size: larger;
+      font-size: large;
     }
     &_button {
       @include btn;

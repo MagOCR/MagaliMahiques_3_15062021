@@ -1,6 +1,12 @@
 body {
     font-family: $text-font;
   }
+  .header_restaurant_text {
+    font-size:xx-large;
+  }
+  .fa-arrow-left {
+    font-size: x-large;
+  }
   .container_restaurant {
     background-color: #eaeaea;
   }
@@ -24,12 +30,13 @@ body {
     }
   }
   .menu_title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   
   .dishe_block_title {
     margin: 1rem 0 0.6rem 1rem;
     font-size: small;
+    font-weight: 100;
   }
   /* trait pour souligner les titres*/
   hr {

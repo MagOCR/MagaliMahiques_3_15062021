@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/d80c6b1931.js" crossorigin="anonymous"></script> 
     <title>OhMyFood - Le délice des sens</title>
 </head>
@@ -17,7 +15,7 @@
                <i class="fas fa-arrow-left"></i>
             </a>
             <div class="header_restaurant_title">
-                <h1 class="header_restaurant_text">ohmyfood</h1>
+                <div class="header_restaurant_text">ohmyfood</div>
             </div>
         </header>
         <!-- main contenu-->
@@ -28,22 +26,25 @@
                 <!-- titre du restaurant-->
                 <div class="container_restaurant_menu_title">
                     <h1 class="menu_title">Le délice des sens</h1>
-                    <div class="like">
-                        <i class="far fa-heart like--empty" aria-hidden="true">
-                            <i class="fas fa-heart like--full" aria-hidden="true"></i>
-                        </i>
+                    <div class="heart">
+                        <div class="heart__1">
+                            <i class="far fa-heart fafa-2x"></i>
+                        </div>
+                        <div class="heart__2">
+                            <i class="fas fa-heart fafa-2x"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="container_restaurant_menu_dishe">
                     <!-- bloc des entrées-->
                     <div class="dishe_block">
                         <div class="dishe_block_title">
-                            <h1 >ENTRÉES</h1>
+                            <h2>ENTRÉES</h2>
                             <hr>
                         </div>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Tartare de thon</h2>
+                                <h3 class="dishe_card_content_h2">Tartare de thon</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Assaisonné au yuzu</p>
                                     <p class="dishe_card_description_price">25€</p>
@@ -57,7 +58,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Bouchée de homard croustillant</h2>
+                                <h3 class="dishe_card_content_h2">Bouchée de homard croustillant</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Et sa farandole de petits légumes</p>
                                     <p class="dishe_card_description_price">35€</p>
@@ -71,7 +72,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Velouté de cèpes</h2>
+                                <h3 class="dishe_card_content_h2">Velouté de cèpes</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Aux truffes</p>
                                     <p class="dishe_card_description_price">20€</p>
@@ -87,12 +88,12 @@
                     <!-- bloc des plats-->
                     <div class="dishe_block">
                         <div class="dishe_block_title">
-                            <h1 >PLATS</h1>
+                            <h2>PLATS</h2>
                             <hr>
                         </div>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Poulet rôti aux herbes de provence</h2>
+                                <h3 class="dishe_card_content_h2">Poulet rôti aux herbes de provence</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Et sa crème de truffe</p>
                                     <p class="dishe_card_description_price">40€</p>
@@ -106,7 +107,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Langouste rôtie</h2>
+                                <h3 class="dishe_card_content_h2">Langouste rôtie</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Et ses légumes de saison</p>
                                     <p class="dishe_card_description_price">35€</p>
@@ -120,7 +121,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Côte de boeuf angus</h2>
+                                <h3 class="dishe_card_content_h2">Côte de boeuf angus</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Et sa purée de panais</p>
                                     <p class="dishe_card_description_price">44€</p>
@@ -136,12 +137,12 @@
                     <!-- bloc des desserts-->
                     <div class="dishe_block">
                         <div class="dishe_block_title">
-                            <h1 >DESSERTS</h1>
+                            <h2>DESSERTS</h2>
                             <hr>
                         </div>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Farandole de desserts</h2>
+                                <h3 class="dishe_card_content_h2">Farandole de desserts</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Du chef</p>
                                     <p class="dishe_card_description_price">18€</p>
@@ -155,7 +156,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Crème brulée</h2>
+                                <h3 class="dishe_card_content_h2">Crème brulée</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">Revisitée</p>
                                     <p class="dishe_card_description_price">22€</p>
@@ -169,7 +170,7 @@
                         </article>
                         <article class="dishe_card">
                             <div class="dishe_card_content">
-                                <h2 class="dishe_card_content_h2">Tiramisu</h2>
+                                <h3 class="dishe_card_content_h2">Tiramisu</h3>
                                 <div class="dishe_card_description">
                                     <p class="dishe_card_description_text">À la noisette</p>
                                     <p class="dishe_card_description_price">23€</p>
