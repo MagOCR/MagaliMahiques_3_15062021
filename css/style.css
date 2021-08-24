@@ -79,7 +79,6 @@ body {
 .heart {
   position: absolute;
   right: 20px;
-  top: 1;
 }
 .heart__1 {
   position: relative;
